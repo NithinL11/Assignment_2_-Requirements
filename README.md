@@ -163,8 +163,11 @@ Method 3: Compares AI performance on cleaned vs. uncleaned data, proving that da
 ###Follow-up Question:
 
 -How often do developers notice duplicate or incorrect data in scraped datasets?
+
 -What is the most common type of inconsistency found in training data—duplicates, missing values, or formatting errors?
+
 -Do developers manually clean data before training AI models, and how long does that process take?
+
 -Would developers prefer an automated cleaning tool, or do they need manual oversight to review flagged data?
 
 ###Preliminary Tasks:
@@ -174,3 +177,40 @@ Method 3: Compares AI performance on cleaned vs. uncleaned data, proving that da
 -Develop automated validation scripts for checking data consistency.
 
 -Create logging and reporting tools to flag incorrect entries.
+
+
+###Requirement 5
+As an AI developer, I want to track the source and history of training data so that I can verify its reliability and ensure compliance with ethical AI standards.
+
+###Assumptions & Validation:
+
+-Developers need to know where data is scraped from to avoid legal or ethical issues.
+
+Method 1: Verify that each data entry has an associated source record to ensure traceability and compliance.
+
+-Tracking the modifications made to the dataset is essential for debugging AI model performance.
+
+Method 2: Check whether the system logs modifications and updates to training data.
+
+-A data provenance system will improve transparency and trustworthiness.
+
+Method 3: Conduct a developer review to ensure the provenance system meets their needs.
+
+###Follow-up questions:
+
+-How often do developers need to check the source of training data?
+
+-Would developers have manual control over data verification?
+
+-How does tracking data history improve model retraining and long-term AI development?
+
+-What challenges have developers faced in ensuring data transparency?
+
+###Preliminary Tasks:
+
+-Implement metadata tracking for each dataset entry.
+
+-Develop an audit log to track data modifications and updates.
+
+-Create a user-accessible dashboard to review data provenance.
+
