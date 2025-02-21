@@ -2,6 +2,7 @@
 
 
 ## Scenario
+
 The client, an AI developer, uses web scraping to collect training data but faces some challenges:
 
 1.Separating questions from answers to prevent AI from memorizing responses.
@@ -52,6 +53,7 @@ Method 6: Conduct statistical analysis on dataset distribution to check for imba
 
 
 ###Preliminary Tasks:
+
 -Identify storage issues by analyzing the current dataset.
 
 -Confirm developer workflows through interviews.
@@ -64,11 +66,14 @@ Method 6: Conduct statistical analysis on dataset distribution to check for imba
 
 -Evaluate the system’s impact on AI model validation.
 
+----
 
 ###Requirement 2: 
+
 As an AI developer, I want to ensure that my training data is unbiased so that the AI model can make fair and accurate predictions.
 
 ###Assumptions & Validation:
+
 -Bias exists due to overrepresentation or underrepresentation of certain data.
 
 Method 1. Review past AI model predictions for biased trends.
@@ -82,6 +87,7 @@ Method 2. Run statistical analysis on dataset distribution.
 Method 3. Gather developer feedback on biased AI outputs.
 
 ###Follow-up Questions:
+
 -What types of biases have been observed in past training data?
 
 -How frequently do developers encounter bias-related issues in AI outputs?
@@ -95,6 +101,7 @@ Method 3. Gather developer feedback on biased AI outputs.
 
 
 ###Preliminary Tasks:
+
 -Collect past AI training results and analyze bias patterns.
 
 -Implement a bias detection algorithm to flag issues.
@@ -105,11 +112,14 @@ Method 3. Gather developer feedback on biased AI outputs.
 
 -Test and refine the bias detection model.
 
+----
 
 ###Requirement 3: 
+
 As an AI developer, I want the training data to be analyzed for balance across different categories so that the AI model does not favor certain inputs over others.
 
 ###Assumptions & Validation:
+
 -AI model performance declines when trained on skewed datasets.
 
 Method 1. Compare AI performance on balanced and unbalanced datasets to measure data.
@@ -143,10 +153,14 @@ Method 3. Analyze existing datasets for imbalances.
 
 -Set up alerts for dataset balance thresholds.
 
+----
+
 ###Requirement  4:
+
 As an AI developer, I want to ensure that the training data collected through web scraping is clean and consistent so that AI models can be trained without errors caused by duplicate data.
 
 ###Assumptions & Validation:
+
 -Web scraping often results in duplicate, missing, or incorrect data.
 
 Method 1: Identify inconsistencies in the dataset using statistical checks to detect missing or incorrect data.
@@ -178,8 +192,10 @@ Method 3: Compares AI performance on cleaned vs. uncleaned data, proving that da
 
 -Create logging and reporting tools to flag incorrect entries.
 
+----
 
 ###Requirement 5
+
 As an AI developer, I want to track the source and history of training data so that I can verify its reliability and ensure compliance with ethical AI standards.
 
 ###Assumptions & Validation:
@@ -214,3 +230,14 @@ Method 3: Conduct a developer review to ensure the provenance system meets their
 
 -Create a user-accessible dashboard to review data provenance.
 
+----
+
+###System Requirements
+
+-The system should handle large-scale data processing efficiently.
+
+-The system should provide real-time data retrieval.
+
+-Implement a dashboard for managing datasets and viewing reports.
+
+-The system should support exporting datasets in different formats.
