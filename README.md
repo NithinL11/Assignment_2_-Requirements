@@ -5,6 +5,7 @@
 The client, an AI developer, uses web scraping to collect training data but faces some challenges:
 
 1.Separating questions from answers to prevent AI from memorizing responses.
+
 2.Ensuring balanced datasets to improve AI fairness and accuracy.
 
 ---
@@ -141,3 +142,35 @@ Method 3. Analyze existing datasets for imbalances.
 -Implement an imbalance detection system.
 
 -Set up alerts for dataset balance thresholds.
+
+###Requirement  4:
+As an AI developer, I want to ensure that the training data collected through web scraping is clean and consistent so that AI models can be trained without errors caused by duplicate data.
+
+###Assumptions & Validation:
+-Web scraping often results in duplicate, missing, or incorrect data.
+
+Method 1: Identify inconsistencies in the dataset using statistical checks to detect missing or incorrect data.
+
+-Inconsistent data can negatively impact AI model accuracy.
+
+Method 2: Run a duplicate detection algorithm on the training data to ensure data consistency and integrity.
+
+-A data-cleaning and validation process will improve the reliability of the training dataset.
+
+Method 3: Compares AI performance on cleaned vs. uncleaned data, proving that data cleaning enhances reliability.
+
+
+###Follow-up Question:
+
+-How often do developers notice duplicate or incorrect data in scraped datasets?
+-What is the most common type of inconsistency found in training data—duplicates, missing values, or formatting errors?
+-Do developers manually clean data before training AI models, and how long does that process take?
+-Would developers prefer an automated cleaning tool, or do they need manual oversight to review flagged data?
+
+###Preliminary Tasks:
+
+-Implement data to remove duplicates and incorrect data.
+
+-Develop automated validation scripts for checking data consistency.
+
+-Create logging and reporting tools to flag incorrect entries.
