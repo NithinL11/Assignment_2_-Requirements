@@ -23,12 +23,15 @@ Method 1: Interview developers to determine if pre-exposed answers cause overfit
 -Developers need access to questions only to prevent AI from memorizing answers.
 
 Method 2: Analyze the current dataset structure to identify whether questions and answers are mixed.
+
 Method 3: Test AI models with and without pre-exposed answers and compare performance metrics.
 
 -A relational database will help structure and retrieve data efficiently.
 
 Method 4: Review past AI model predictions for potential bias trends.
+
 Method 5: Gather feedback from developers about their experiences with biased AI outputs.
+
 Method 6: Conduct statistical analysis on dataset distribution to check for imbalances.
 
 
@@ -66,12 +69,15 @@ As an AI developer, I want to ensure that my training data is unbiased so that t
 
 ###Assumptions & Validation:
 -Bias exists due to overrepresentation or underrepresentation of certain data.
+
 Method 1. Review past AI model predictions for biased trends.
 
 -Developers need an automated bias detection system to identify and correct imbalances before AI model training.
+
 Method 2. Run statistical analysis on dataset distribution.
 
 -Statistical analysis is the best way to quantify bias.
+
 Method 3. Gather developer feedback on biased AI outputs.
 
 ###Follow-up Questions:
@@ -97,3 +103,41 @@ Method 3. Gather developer feedback on biased AI outputs.
 -Create a user dashboard for viewing bias metrics.
 
 -Test and refine the bias detection model.
+
+
+###Requirement 3: 
+As an AI developer, I want the training data to be analyzed for balance across different categories so that the AI model does not favor certain inputs over others.
+
+###Assumptions & Validation:
+-AI model performance declines when trained on skewed datasets.
+
+Method 1. Compare AI performance on balanced and unbalanced datasets to measure data.
+
+-A dataset balance-checking tool is required.
+
+Method 2. Conduct surveys to assess how dataset balance impacts training.
+
+-Developers need a visual tool to assess and correct dataset balance.
+
+Method 3. Analyze existing datasets for imbalances.
+
+###Follow-up Question:
+
+-How does dataset imbalance currently affect AI model predictions?
+
+-How often should dataset balance be re-evaluated?
+
+-What past fixes for dataset balance have worked, and which ones failed?
+
+-How do different AI models react when trained on balanced vs. unbalanced datasets?
+
+
+###Preliminary Tasks:
+
+-Develop a data distribution analysis tool.
+
+-Create a dataset balance visualization dashboard.
+
+-Implement an imbalance detection system.
+
+-Set up alerts for dataset balance thresholds.
